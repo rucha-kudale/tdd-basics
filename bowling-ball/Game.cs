@@ -2,16 +2,25 @@
 
 namespace BowlingBall
 {
-    public class Game
-    {
+    /// <summary>
+    /// Class for game
+    /// </summary>
+    public class Game : IGame
+    {        
+        private static readonly int[] allRolls = new int[21];
+       
+        /// <summary>
+        /// Enter pins hit when you roll the ball        
+        /// </summary>
+        /// <param name="pins"></param>
         public void Roll(int pins)
         {
-            throw new NotImplementedException();
-        }
 
+        }
         public int GetScore()
         {
-            throw new NotImplementedException();
+            return -1;
+
         }
 
     }
