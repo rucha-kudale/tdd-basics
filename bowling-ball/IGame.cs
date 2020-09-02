@@ -8,6 +8,10 @@ namespace BowlingBall
     {
         void Roll(int pins);
         int GetScore();
-      
+        bool IsStrike(int frameIndex);
+        bool IsSpare(int frameindex);
+        int SumOfBallsInFrame(int frameIndex);
+        int SpareBonus(int frameIndex);
+        int StrikeBonus(int frameIndex);
     }
 }
